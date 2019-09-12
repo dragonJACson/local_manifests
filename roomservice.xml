@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="https://github.com/dragonJACson" name="luke" />
+  <remote fetch="https://gitlab.com/lukedyue/" name="luke-gitlab" />
+  <remote fetch="https://github.com/AOSiP" name="aosip" revision="refs/heads/pie" />
+  <remote fetch="https://github.com/PixelExperience" name="pe" revison="refs/heads/pie-plus" />
+
+  <remove-project name="MoKee/android_build"/>
+  <remove-project name="MoKee/android_vendor_mk"/>
+  <remove-project name="MoKee/android_vendor_mk-priv"/>
+  <remove-project name="MoKee/android_frameworks_base"/>
+  <remove-project name="MoKee/android_packages_app_Settings"/>
+  <remove-project name="MoKee/android_packages_app_MKParts"/>
+  <remove-project name="MoKee/android_packages_app_PackageInstaller"/>
+  <remove-project name="MoKee/android_mokee-sdk"/>
+  <remove-project name="MoKee/android_prebuilts_build-tools" />
+  <remove-project name="platform/frameworks/compile/mclinker" />
+  <remove-project name="platform/prebuilts/clang/host/darwin-x86" />
+  <remove-project name="platform/prebuilts/clang/host/linux-x86" />
+  <remove-project name="platform/prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" />
+  <remove-project name="platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9" />
+  <remove-project name="platform/prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" />
+  <remove-project name="platform/prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" />
+  <remove-project name="platform/prebuilts/gdb/darwin-x86" />
+  <remove-project name="platform/prebuilts/go/darwin-x86" />
+  <remove-project name="platform/prebuilts/python/darwin-x86/2.7.5" />
+
+  <project path="build/make" name="android_build" remote="luke" revision="luke" >
+      <copyfile src="core/root.mk" dest="Makefile" />
+      <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+      <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+      <linkfile src="core" dest="build/core" />
+      <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+      <linkfile src="target" dest="build/target" />
+      <linkfile src="tools" dest="build/tools" />
+  </project>
+
+  <project name="MoKee/android_device_oneplus_oneplus3" path="device/oneplus/oneplus3" remote="mokee" />
+  <project name="MoKee/android_device_oppo_common" path="device/oppo/common" remote="mokee" />
+  <project name="MoKee/android_kernel_oneplus_msm8996" path="kernel/oneplus/msm8996" remote="mokee" />
+  <project name="MoKee/android_vendor_oneplus_oneplus3" path="vendor/oneplus/oneplus3" remote="mokee" />
+  <project name="MoKee/android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="mokee" />
+
+  <project name="android_vendor_mk" path="vendor/mk" remote="luke" revision="luke" />
+  <project name="android_vendor_mk-priv" path="vendor/mk-priv" remote="luke" revision="luke" />
+  <project name="android_frameworks_base" path="frameworks/base" remote="luke" revision="luke" />
+  <project name="android_packages_app_Settings" path="packages/app/Settings" remote="luke" revision="luke" />
+  <project name="android_packages_app_MKParts" path="packages/app/MKParts" remote="luke" revision="luke" />
+  <project name="android_packages_app_PackageInstaller" path="packages/app/PackageInstaller" remote="luke" revision="luke" />
+  <project name="android_mokee-sdk" path="mokee-sdk" remote="luke" revision="luke" />
+  <project name="vendor_pixelstyle" path="vendor/pixelstyle" remote="luke-gitlab" revision="luke" />
+  <project name="android_device_xiaomi_jason" path="device/xiaomi/jason" remote="luke" revision="luke" />
+  <project name="android_kernel_xiaomi_jason" path="kernel/xiaomi/jason" remote="luke" revision="hmp" />
+  <project name="android_vendor_xiaomi_jason" path="vendor/xiaomi/jason" remote="luke" revision="luke" />
+  <project clone-depth="1" name="platform_prebuilts_build-tools" path="prebuilts/build-tools" remote="aosip" />
+  <project clone-depth="1" name="platform_frameworks_compile_mclinker" path="frameworks/compile/mclinker" remote="aosip" />
+  <project clone-depth="1" name="platform_prebuilts_clang_host_linux-x86" path="prebuilts/clang/host/linux-x86" remote="aosip" />
+</manifest>
