@@ -9,9 +9,9 @@
   <remove-project name="MoKee/android_vendor_mk"/>
   <remove-project name="MoKee/android_vendor_mk-priv"/>
   <remove-project name="MoKee/android_frameworks_base"/>
-  <remove-project name="MoKee/android_packages_app_Settings"/>
-  <remove-project name="MoKee/android_packages_app_MKParts"/>
-  <remove-project name="MoKee/android_packages_app_PackageInstaller"/>
+  <remove-project name="MoKee/android_packages_apps_Settings"/>
+  <remove-project name="MoKee/android_packages_apps_MKParts"/>
+  <remove-project name="MoKee/android_packages_apps_PackageInstaller"/>
   <remove-project name="MoKee/android_mokee-sdk"/>
   <remove-project name="MoKee/android_prebuilts_build-tools" />
   <remove-project name="platform/frameworks/compile/mclinker" />
@@ -44,9 +44,9 @@
   <project name="android_vendor_mk" path="vendor/mk" remote="luke" revision="luke" />
   <project name="android_vendor_mk-priv" path="vendor/mk-priv" remote="luke" revision="luke" />
   <project name="android_frameworks_base" path="frameworks/base" remote="luke" revision="luke" />
-  <project name="android_packages_app_Settings" path="packages/app/Settings" remote="luke" revision="luke" />
-  <project name="android_packages_app_MKParts" path="packages/app/MKParts" remote="luke" revision="luke" />
-  <project name="android_packages_app_PackageInstaller" path="packages/app/PackageInstaller" remote="luke" revision="luke" />
+  <project name="android_packages_apps_Settings" path="packages/apps/Settings" remote="luke" revision="luke" />
+  <project name="android_packages_apps_MKParts" path="packages/apps/MKParts" remote="luke" revision="luke" />
+  <project name="android_packages_apps_PackageInstaller" path="packages/apps/PackageInstaller" remote="luke" revision="luke" />
   <project name="android_mokee-sdk" path="mokee-sdk" remote="luke" revision="luke" />
   <project name="vendor_pixelstyle" path="vendor/pixelstyle" remote="luke-gitlab" revision="luke" />
   <project name="android_device_xiaomi_jason" path="device/xiaomi/jason" remote="luke" revision="luke" />
